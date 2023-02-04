@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #80808029;
+    font-family: Raleway;
+}
+
+.container-max{
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+/*==================== Inicio Sessão Cabeçalho ====================*/
+
+header{
+    height: 55px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho p{
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+.cabecalho img{
+    height: 32px;
+    width: 32px;
+}
+/*==================== Fim Sessão Cabeçalho ====================*/
+
+/*==================== Inicio Sessão Formulario ====================*/
+
+main{
+    width: 100%;
+    height: auto;
+
+    background-image: url(imagens/bahia.jpg);
+    background-size: cover;
+}
+
+.formulario{
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+.cabecalho-form{
+    width: 100%;
+    background-color: #5d15d1;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-form img{
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+
+.cabecalho-form p{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.formulario-area{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-area h2{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+label{
+    font-size: 16px;
+}
+
+input, select{
+    height: 32px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0px 5px;
+}
+
+select{
+    padding: 0 3px;
+    width: calc(50%-10px);
+}
+
+.comum{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.radio-container{
+    display: flex;
+}
+
+.radio-container input{
+    width: 15px;
+}
+
+.radio-itens label{
+    margin-left: 8px;
+}
+
+.radio-itens{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+
+.espaco-form{
+    width: 100%;
+}
+
+.space{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btn-enviar{
+    height: 32px;
+    width: 160px;
+    margin-top: 12px;
+
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+.btn-enviar:hover{
+    cursor: pointer;
+}
+
+/*==================== Fim Sessão Formulario ====================*/
+
+/*==================== Inicio Sessão Ofertas ====================*/
+
+.ofertas-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    margin: 32px auto 0 auto;
+}
+
+.ofertas-container h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ofertas-container h3{
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.ofertas-container span{
+    font-weight: bold;
+}
+
+.ofertas-area, .natureza-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.ofertas-titulo{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.ofertas-descricao, .natureza-descricao {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+
+.ofertas-descricao span {
+    font-weight: bold;
+}
+
+.ofertas-imagens {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-imagem-destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.oferta-quatro-imagens {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.oferta-quatro-imagens figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.oferta-imagem-destaque img, .oferta-quatro-imagens img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
+    color: #fff;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+/*==================== Fim Sessão Ofertas ====================*/
+
+/*==================== Incio Sessão Anuncio ====================*/
+
+.natureza-titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.imagens-anuncios{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagens-anuncios figure{
+    height: 100%;
+    width: calc(50% - 10px);
+
+}
+
+.imagens-anuncios img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    width: 100%;
+    padding: 20px;
+
+    background-color: #fff;
+}
+
+.info h3{
+    font-size: 16px;
+}
+
+.info p{
+    margin-top: 15px;
+    font-size: 14px;
+    color: grey;
+}
+/*==================== Fim  Sessão Anuncio ====================*/
+
+/*==================== Inicio  Sessão Footer ====================*/
+
+footer{
+    width: 100%;
+    margin-top: 32px;
+    background-color: #5d15d1;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato, .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.contato h3, .redes-sociais h3{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.info-contato{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.info-contato img{
+    width: 18px;
+}
+
+.info-contato span{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/*==================== Fim  Sessão Footer ====================*/
+
+
+/*==================== Inicio Media Queries ====================*/
+
+/*==================== Telas até 1100px ====================*/
+
+@media (max-width: 1100px){
+    .container-max{
+        width: 90%;
+        max-width: 1024px;
+    }
+}
+
+/*==================== Telas até 768px ====================*/
+
+@media (max-width: 768px){
+    .btn-enviar{
+        width: 100%;
+    }
+
+    .ofertas-imagens{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .oferta-quatro-imagens{
+        width: 100%;
+    }
+
+    .ofertas-imagens figure{
+        width: 100%;
+
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .imagens-anuncios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagens-anuncios figure{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato, .redes-sociais{
+        width: 250px;
+    }
+}
+
+
+/*==================== Telas até 540px ====================*/
+
+@media (max-width: 540px){
+    .space, .comum{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*==================== Fim Media Queries ====================*/
+
